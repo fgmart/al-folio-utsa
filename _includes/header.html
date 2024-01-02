@@ -1,8 +1,16 @@
 
-    <header>
+    <header class="navigation {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+
+  <!-- UTSA branding -->
+  <!-- blue utsa header -->
+  <div class="bheader">
+    <a href="https://www.utsa.edu"><img class="img-fluid illustration" width="250" src="/assets/img/bheader_logo.svg"></a>
+  </div>
+  <!-- orange utsa header -->
+  <div class="oheader"></div>
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm">
         <div class="container">
           {% if page.permalink != '/' -%}
           <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
@@ -111,7 +119,7 @@
       </nav>
 {% if site.enable_progressbar %}
       <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
+      <progress id="progress" value="0" style="margin-top: 47px">
         <div class="progress-container">
           <span class="progress-bar"></span>
         </div>

@@ -416,7 +416,8 @@ footer.fixed-bottom {
   }
 
   a {
-    color: var(--global-footer-link-color);
+#    color: var(--global-footer-link-color);
+    color: var(--global-theme-color);
 
     &:hover {
       color: var(--global-theme-color);
@@ -427,8 +428,8 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 0.9rem;
 }
 
@@ -1067,3 +1068,25 @@ nav[data-toggle="toc"] {
 #toc-sidebar {
   z-index: 1;
 }
+
+/* utsa branding */
+.bheader {
+  &.fixed-top{
+    position: sticky !important;
+  }
+  background: $utsablue;
+  padding: 10px 0px 10px 10px;
+}
+
+.oheader {
+  &.fixed-top{
+    position: sticky !important;
+  }
+  background: $utsaoran;
+  padding: 1px 0px 3px 3px;
+}
+
+.bg-utsablue {
+  background: $utsablue !important;
+}
+
